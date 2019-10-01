@@ -10,10 +10,14 @@ int main(int argc, char *argv[]) {
 	printf("input a number:");
 	scanf("%d",&input);
 	
-	if (input>0)
-		printf("%d",input);
-	else
-		printf("%d",-input);
+		if (input>0)
+		printf("positive");
+		
+		else if (input==0)
+		printf("zero");
+		
+		else
+		printf("nonpositive");
 	 
 	return 0;
 	
