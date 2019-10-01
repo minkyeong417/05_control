@@ -11,9 +11,9 @@ int main(int argc, char *argv[]) {
 	scanf("%d",&input);
 	
 	if (input>0)
-		printf("positive");
+		printf("%d",input);
 	else
-		printf("nonpositive");
+		printf("%d",-input);
 	 
 	return 0;
 	
