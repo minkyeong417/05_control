@@ -5,9 +5,18 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i;
-	for (i=0;i<10;i++)
-		printf("Hello Wordld!\n");
+	int num=0;
+	char c;
+	
+	printf("input a string:");
+	while((c=getchar())!='\n')
+	{if (c>='0'&&c<='9')
+		num++;
+			}
+	
+	printf("the number of digits:%d",num);
+		
+	
 	
 	return 0;
 }
