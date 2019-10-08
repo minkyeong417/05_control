@@ -5,18 +5,27 @@
 
 int main(int argc, char *argv[]) {
 	
+	int answer=59;
+	int input;
 	int num=0;
-	char c;
 	
-	printf("input a string:");
-	while((c=getchar())!='\n')
-	{if (c>='0'&&c<='9')
+	do
+	{
+		printf("input a number:");
+		scanf("%d",&input);
+		if (input>answer)
+		{
+			printf("bigger than the answer\n");
+		}
+		else if (input<answer)
+		{
+			printf("smaller than the answer\n");
+		}
 		num++;
-			}
+	}
+	while (input!=answer);
 	
-	printf("the number of digits:%d",num);
-		
-	
+	printf("congratulation. trial:%d",num);
 	
 	return 0;
 }
